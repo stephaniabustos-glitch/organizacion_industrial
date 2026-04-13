@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>McDonald's - Promociones</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff8e7;
+      color: #222;
+    }
+
+    header {
+      background: #d61f26;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      color: #ffc72c;
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                  url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=80') center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background: #ffc72c;
+      color: #222;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .menu {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .menu h3 {
+      font-size: 2rem;
+      color: #d61f26;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h4 {
+      color: #d61f26;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .card-content p {
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>McDonald's</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2>Disfruta tu comida favorita</h2>
+    <p>Hamburguesas, papas fritas y promociones irresistibles.</p>
+    <a href="#menu" class="btn">Ver menú</a>
+  </section>
+
+  <section class="menu" id="menu">
+    <h3>Nuestros destacados</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="Hamburguesa" />
+        <div class="card-content">
+          <h4>Big Burger</h4>
+          <p>Una hamburguesa deliciosa con queso, lechuga y salsa especial.</p>
+          <a href="#" class="btn">Pedir ahora</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=800&q=80" alt="Papas fritas" />
+        <div class="card-content">
+          <h4>Papas Fritas</h4>
+          <p>Crujientes, doradas y perfectas para acompañar tu combo.</p>
+          <a href="#" class="btn">Pedir ahora</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=800&q=80" alt="Bebida" />
+        <div class="card-content">
+          <h4>Bebida Helada</h4>
+          <p>Refresca tu día con una bebida fría junto a tu comida favorita.</p>
+          <a href="#" class="btn">Pedir ahora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>© 2026 McDonald's - Página de ejemplo en HTML</p>
+  </footer>
+</body>
+</html>
